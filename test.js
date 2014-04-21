@@ -1,10 +1,14 @@
-var aaio = require('./lib/index');
+var aaio = require('./lib/server');
 var log = require('util').log;
 
 log('aa-io listening on port 6678');
-var server = new aaio().listen(6678, {
-  authorizeFunc: function(token) {
-    return token == '123';
+var server = new aaio(6678, {
+  authorizeFunc: function(token, socket, callback) {
+    if (token == 123) {
+      callback(null, {ok: 1});
+    } else {
+      callback('error', null);
+    }
   }
 });
 
