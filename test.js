@@ -1,8 +1,8 @@
-var aaio = require('./index');
+var aaio = require('./lib/index');
 var log = require('util').log;
 
 log('aa-io listening on port 6678');
-var server = aaio.listen(6678, {
+var server = new aaio().listen(6678, {
   authorizeFunc: function(token) {
     return token == '123';
   }

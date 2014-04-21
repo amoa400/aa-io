@@ -1,7 +1,7 @@
 {
 	"name": "aa-io",
-	"description": "a realtime communication library base on Engine.io (es6 style)",
-	"version": "0.1.0",
+	"description": "a realtime communication library base on Engine.io",
+	"version": "0.1.1",
 	"author": "amoa400 <amoa400@163.com>",
 	"keywords": [
 		"aa-io",
@@ -11,9 +11,8 @@
 	"repository": "https://github.com/amoa400/aa-io",
 	"homepage": "http://www.amoa400.com",
 	"dependencies": {
-		"engine.io": "1.0.5",
-		"traceur": "0.0.33"
+		"engine.io": "1.0.5"
 	},
 	"main": "index.js",
-	"readme": "a realtime communication library base on Engine.io (es6 style)\n\nhomepage: https://github.com/amoa400/aa-io"
+	"readme": "a realtime communication library base on Engine.io\n\nhomepage: https://github.com/amoa400/aa-io"
 }
